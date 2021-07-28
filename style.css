@@ -1,0 +1,283 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main img {
+  margin: 0 auto;
+  max-height: auto;
+  max-width: 100%;
+  border: none;
+  display: block;
+  padding: 5px 0;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+#menu ul{
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+
+
+header {
+  background-color: #ff385c;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  font-family: "Pangolin", cursive;
+  font-size: 54px;
+  color: #fff;
+  vertical-align: auto;
+}
+
+
+header nav ul li {
+  list-style-type: none;
+  display: inline-flex; 
+  padding: 4px;
+  font-size: 20px; 
+  align-content: space-around;
+}
+
+
+header nav ul li a {
+  display: inline-flex; 
+  text-align: center; 
+  color: #fff;
+  text-decoration: none;
+  padding: 0 0 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+
+/* -------  Search Form ------- */
+
+
+/* Form Row */
+
+
+.form-row {
+  display: flex;
+  justify-content: flex-end;
+  padding: .5em;
+}
+.form-row > label {
+  padding: .5em 1em .5em 0;
+  flex: 1;
+}
+.form-row > input {
+  flex: 2;
+}
+.form-row > input,
+.form-row > button {
+  padding: .5em;
+}
+.form-row > button {
+ background: gray;
+ color: white;
+ border: 0;
+}
+
+
+/* end */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid #ff385c;
+  padding: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 65%;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+/* set for larger screens */ 
+@media all and (min-width: 480px){
+  header {
+    font-size: 48px; 
+  }
+
+  .logo {
+    margin: 14 px 0 14px 20px;
+    padding-top: 0;
+    font-size: auto;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  .wrapper {
+    align-items: center;
+    justify-content: center; 
+  }
+
+  .form div {
+    flex-direction: column;
+  }
+
+  .item label
+  , .item input 
+  , .item select 
+  , .item button{
+    display: flex;
+    width: 100%
+  }
+
+  .vacation-form .item {
+    display: flex block;
+    flex: 1 1 auto;
+    flex-direction: column;
+  }
+
+
+  .ideas-section {
+    margin: 20px auto;
+    width: auto;
+    height: auto; 
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .menu-wrapper {
+    display: flex;
+  }
+  
+  .menu-wrapper .logo {
+    display: inline-flex;
+    margin-right: auto; 
+  }
+
+  .menu-wrapper #menu {
+    display: inline-flex; 
+  }
+
+}
+
+@media all and (min-width: 1000px){ 
+
+
+  div#wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  div#wrapper ul {
+    display: inline-flex;
+    flex-direction: row;
+  }
+
+  form .form {
+    align-items: center;
+  }
+
+  div#wrapper form button {
+    display: flex;
+    flex-direction: row; 
+    max-width: 100%;
+    width: auto; 
+    }
+
+  .form {
+    display: inline-flex; 
+    flex-direction: row; 
+    align-items: center;
+    size: auto;
+    justify-content: center; 
+  }
+
+}
+
+  
