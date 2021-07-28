@@ -1,5 +1,8 @@
 # Thinkfulbnb
 
+This project encapsulates my ability to edit HTML from an unfinished state. The challenge information is documented below. This was a tedious assignment, but rather fun. The techniques I learned include collateral CSS effects and tagging anchors efficiently. 
+
+
 Thinkfulbnb is a vacation rental website that allows people to rent out their homes to people who are seeking short-term accommodations in that locale. Thinkfulbnb hosts rent out different kinds of properties, including single rooms, apartments, and unique living spaces such as yachts, houseboats, yurts, tiny houses, and even renovated medieval castles.
 
 For this assignment, you will implement Thinkfulbnb's landing page in HTML & CSS.
